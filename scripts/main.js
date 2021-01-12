@@ -12,13 +12,25 @@ function addExcitement(theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-      // Concatenate the new word onto buildMeUp
-      buildMeUp += theWordArray[i].concat(" ");
+      
+      
+
+      if ((i + 1) % 3 === 0 && i !== 0) {
+        buildMeUp += theWordArray[i].concat("! ");
+      } else {
+        // Concatenate the new word onto buildMeUp
+        buildMeUp += theWordArray[i].concat(" ");
+      }
+
       // Print buildMeUp to the console
       console.log(buildMeUp);
     }
-
+    
 }
 
 // Invoke the function and pass in the array
-// addExcitement(sentence);
+addExcitement(sentence);
+
+// Add logic to addExcitement that places an exclamation point (!) after every third word. Read the following English statement and write the equivalent in JavaSript code to make it work.
+
+// If the current value of the counter variable can be evenly divided by 3 (using the JavaScript remainder operator) add a single exclamation point (!) to the current word in the array.
