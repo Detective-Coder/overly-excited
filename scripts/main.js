@@ -36,3 +36,5 @@ addExcitement(sentence, "?", 4);
 // Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
 
 // Add a new argument to the function so that a developer can specify how many times the special character should be added.
+
+// see if you can rewrite addExcitement using arrow syntax.
